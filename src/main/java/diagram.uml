@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1296.7862890356396" y="650.0">com.Resume.security.JwtUserDetalsService</node>
+    <node x="1949.2862890356396" y="420.0">com.Resume.security.Jwt.JwtTokenFilter</node>
+    <node x="356.5000000000001" y="500.0">com.Resume.repository.UserRepository</node>
+    <node x="540.7862890356397" y="650.0">com.Resume.rest.AdminRestControllerV1</node>
+    <node x="808.1999999999999" y="160.0">com.Resume.model.Role</node>
+    <node x="293.22470430002886" y="650.0">com.Resume.service.impl.UserServiceImpl</node>
+    <node x="1444.1884152643893" y="420.0">com.Resume.security.Jwt.JwtUser</node>
+    <node x="1373.1135234894975" y="500.0">com.Resume.security.Jwt.JwtUserFactory</node>
+    <node x="697.7271598531338" y="420.0">com.Resume.dto.UserDto</node>
+    <node x="833.45" y="250.0">com.Resume.model.User</node>
+    <node x="10.500000000000114" y="500.0">com.Resume.repository.RoleRepository</node>
+    <node x="1990.2000000000003" y="500.0">com.Resume.security.Jwt.JwtConfigurer</node>
+    <node x="1046.6044708538216" y="500.0">com.Resume.service.UserService</node>
+    <node x="1865.3635234894975" y="160.0">com.Resume.security.Jwt.JwtAuthenticationException</node>
+    <node x="776.7862890356397" y="650.0">com.Resume.rest.RegistrationRestControllerV1</node>
+    <node x="1861.3635234894975" y="250.0">com.Resume.security.Jwt.JwtTokenProvider</node>
+    <node x="1524.7862890356396" y="650.0">com.Resume.rest.AuthenticationRestControllerV1</node>
+    <node x="425.95000000000005" y="0.0">com.Resume.model.Status</node>
+    <node x="809.4499999999999" y="80.0">com.Resume.model.BaseEntity</node>
+    <node x="453.3960329713574" y="250.0">com.Resume.dto.RoleDTO</node>
+    <node x="1677.2862890356396" y="500.0">com.Resume.dto.AuthenticationRequestDTO</node>
+    <node x="1068.7862890356396" y="650.0">com.Resume.rest.UserRestControllerV1</node>
+    <node x="1879.9529557023063" y="650.0">com.Resume.config.SecurityConfig</node>
+    <node x="191.5000000000001" y="420.0">com.Resume.dto.AdminUserDTO</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.repository.RoleRepository">
+      <point x="-37.33333333333337" y="-15.0" />
+      <point x="339.8913709666955" y="610.0" />
+      <point x="130.5000000000001" y="610.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.JwtUserDetalsService" target="com.Resume.service.UserService">
+      <point x="-41.59999999999991" y="-15.0" />
+      <point x="1359.1862890356397" y="610.0" />
+      <point x="1151.6953799447306" y="610.0" />
+      <point x="37.09090909090901" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtUserFactory" target="com.Resume.model.Role">
+      <point x="-32.0" y="-15.0" />
+      <point x="1421.5500000000002" y="220.0" />
+      <point x="871.0571428571427" y="220.0" />
+      <point x="22.857142857142776" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.UserService" target="com.Resume.dto.UserDto">
+      <point x="-34.0" y="-15.0" />
+      <point x="1080.6044708538216" y="480.0" />
+      <point x="770.5271598531338" y="480.0" />
+      <point x="20.799999999999955" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AdminRestControllerV1" target="com.Resume.model.User">
+      <point x="-43.19999999999993" y="-15.0" />
+      <point x="605.5862890356398" y="550.0" />
+      <point x="538.0000000000002" y="550.0" />
+      <point x="538.0000000000002" y="370.0" />
+      <point x="861.1423076923077" y="370.0" />
+      <point x="-12.307692307692264" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.dto.UserDto">
+      <point x="56.0" y="-15.0" />
+      <point x="433.22470430002886" y="570.0" />
+      <point x="549.0000000000002" y="570.0" />
+      <point x="549.0000000000002" y="470.0" />
+      <point x="708.1271598531337" y="470.0" />
+      <point x="-41.60000000000002" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.JwtUserDetalsService" target="com.Resume.security.Jwt.JwtUser">
+      <point x="83.20000000000005" y="-15.0" />
+      <point x="1483.9862890356396" y="630.0" />
+      <point x="1546.9468568228308" y="630.0" />
+      <point x="1546.9468568228308" y="480.0" />
+      <point x="1530.855081931056" y="480.0" />
+      <point x="34.66666666666674" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.RoleDTO" target="com.Resume.model.Status">
+      <point x="-26.0" y="-15.0" />
+      <point x="479.3960329713574" y="60.0" />
+      <point x="473.95000000000005" y="60.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AuthenticationRestControllerV1" target="com.Resume.security.Jwt.JwtTokenProvider">
+      <point x="24.0" y="-15.0" />
+      <point x="1692.7862890356396" y="630.0" />
+      <point x="1655.7862890356396" y="630.0" />
+      <point x="1655.7862890356396" y="390.0" />
+      <point x="1872.3635234894975" y="390.0" />
+      <point x="-77.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtTokenProvider" target="com.Resume.model.Role">
+      <point x="-44.0" y="-15.0" />
+      <point x="1905.3635234894975" y="210.0" />
+      <point x="882.4857142857142" y="210.0" />
+      <point x="34.28571428571422" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.model.User">
+      <point x="0.0" y="-15.0" />
+      <point x="377.22470430002886" y="590.0" />
+      <point x="346.0000000000001" y="590.0" />
+      <point x="346.0000000000001" y="350.0" />
+      <point x="848.8346153846153" y="350.0" />
+      <point x="-24.61538461538464" y="15.0" />
+    </edge>
+    <edge source="com.Resume.config.SecurityConfig" target="com.Resume.security.Jwt.JwtConfigurer">
+      <point x="53.33333333333326" y="-15.0" />
+      <point x="2013.2862890356396" y="630.0" />
+      <point x="2066.2000000000003" y="630.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.RegistrationRestControllerV1" target="com.Resume.model.User">
+      <point x="-34.000000000000114" y="-15.0" />
+      <point x="878.7862890356396" y="570.0" />
+      <point x="876.0362890356396" y="570.0" />
+      <point x="876.0362890356396" y="400.0" />
+      <point x="879.6038461538462" y="400.0" />
+      <point x="6.153846153846189" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AuthenticationRestControllerV1" target="com.Resume.model.User">
+      <point x="-24.0" y="-15.0" />
+      <point x="1644.7862890356396" y="360.0" />
+      <point x="910.373076923077" y="360.0" />
+      <point x="36.923076923076906" y="15.0" />
+    </edge>
+    <edge source="com.Resume.model.Role" target="com.Resume.model.BaseEntity">
+      <point x="0.0" y="-15.0" />
+      <point x="848.1999999999999" y="135.0" />
+      <point x="841.4499999999999" y="135.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.UserRestControllerV1" target="com.Resume.model.User">
+      <point x="78.0" y="-15.0" />
+      <point x="1250.7862890356396" y="630.0" />
+      <point x="1256.6659630412876" y="630.0" />
+      <point x="1256.6659630412876" y="390.0" />
+      <point x="891.9115384615384" y="390.0" />
+      <point x="18.461538461538453" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.service.UserService">
+      <point x="74.66666666666669" y="-15.0" />
+      <point x="451.8913709666956" y="580.0" />
+      <point x="1052.7862890356398" y="580.0" />
+      <point x="-61.818181818181756" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.AdminUserDTO" target="com.Resume.dto.RoleDTO">
+      <point x="0.0" y="-15.0" />
+      <point x="263.5000000000001" y="320.0" />
+      <point x="492.3960329713574" y="320.0" />
+      <point x="-13.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.UserDto" target="com.Resume.dto.RoleDTO">
+      <point x="-13.0" y="-15.0" />
+      <point x="736.7271598531338" y="310.0" />
+      <point x="544.3960329713574" y="310.0" />
+      <point x="39.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.JwtUserDetalsService" target="com.Resume.security.Jwt.JwtUserFactory">
+      <point x="41.59999999999991" y="-15.0" />
+      <point x="1442.3862890356395" y="630.0" />
+      <point x="1453.1135234894975" y="630.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AuthenticationRestControllerV1" target="com.Resume.dto.AuthenticationRequestDTO">
+      <point x="120.0" y="-15.0" />
+      <point x="1788.7862890356396" y="630.0" />
+      <point x="1797.2862890356396" y="630.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AdminRestControllerV1" target="com.Resume.dto.AdminUserDTO">
+      <point x="-86.39999999999998" y="-15.0" />
+      <point x="562.3862890356397" y="560.0" />
+      <point x="527.0000000000002" y="560.0" />
+      <point x="527.0000000000002" y="480.0" />
+      <point x="263.5000000000001" y="480.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.RegistrationRestControllerV1" target="com.Resume.dto.UserDto">
+      <point x="-102.00000000000011" y="-15.0" />
+      <point x="810.7862890356396" y="570.0" />
+      <point x="749.7271598531338" y="570.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtConfigurer" target="com.Resume.security.Jwt.JwtTokenFilter">
+      <point x="-19.0" y="-15.0" />
+      <point x="2047.2000000000003" y="480.0" />
+      <point x="2069.2862890356396" y="480.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AdminRestControllerV1" target="com.Resume.dto.UserDto">
+      <point x="0.0" y="-15.0" />
+      <point x="648.7862890356397" y="570.0" />
+      <point x="622.0862890356398" y="570.0" />
+      <point x="622.0862890356398" y="480.0" />
+      <point x="728.9271598531338" y="480.0" />
+      <point x="-20.799999999999955" y="15.0" />
+    </edge>
+    <edge source="com.Resume.model.User" target="com.Resume.model.Role">
+      <point x="-26.66666666666663" y="-15.0" />
+      <point x="846.7833333333333" y="230.0" />
+      <point x="848.1999999999999" y="230.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.model.BaseEntity" target="com.Resume.model.Status">
+      <point x="0.0" y="-15.0" />
+      <point x="873.4499999999999" y="60.0" />
+      <point x="493.1500000000001" y="60.0" />
+      <point x="19.200000000000045" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AuthenticationRestControllerV1" target="com.Resume.service.UserService">
+      <point x="-72.0" y="-15.0" />
+      <point x="1596.7862890356396" y="580.0" />
+      <point x="1176.4226526720033" y="580.0" />
+      <point x="61.818181818181756" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtUserFactory" target="com.Resume.model.Status">
+      <point x="0.0" y="-15.0" />
+      <point x="1453.1135234894975" y="480.0" />
+      <point x="1433.6884152643893" y="480.0" />
+      <point x="1433.6884152643893" y="50.0" />
+      <point x="512.35" y="50.0" />
+      <point x="38.39999999999998" y="15.0" />
+    </edge>
+    <edge source="com.Resume.model.User" target="com.Resume.model.BaseEntity">
+      <point x="26.66666666666663" y="-15.0" />
+      <point x="900.1166666666666" y="230.0" />
+      <point x="898.6999999999999" y="230.0" />
+      <point x="898.6999999999999" y="135.0" />
+      <point x="905.4499999999999" y="135.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.UserDto" target="com.Resume.model.User">
+      <point x="39.0" y="-15.0" />
+      <point x="788.7271598531338" y="390.0" />
+      <point x="873.45" y="390.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.model.Role" target="com.Resume.model.User">
+      <point x="11.428571428571445" y="15.0" />
+      <point x="859.6285714285714" y="230.0" />
+      <point x="873.45" y="230.0" />
+      <point x="0.0" y="-15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtConfigurer" target="com.Resume.security.Jwt.JwtTokenProvider">
+      <point x="57.0" y="-15.0" />
+      <point x="2123.2000000000003" y="480.0" />
+      <point x="2130.7862890356396" y="480.0" />
+      <point x="2130.7862890356396" y="370.0" />
+      <point x="2026.3635234894975" y="370.0" />
+      <point x="77.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.config.SecurityConfig" target="com.Resume.security.Jwt.JwtTokenProvider">
+      <point x="0.0" y="-15.0" />
+      <point x="1959.9529557023063" y="630.0" />
+      <point x="1938.7862890356396" y="630.0" />
+      <point x="-11.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.model.Role">
+      <point x="-18.666666666666742" y="-15.0" />
+      <point x="358.5580376333621" y="600.0" />
+      <point x="181.0000000000001" y="600.0" />
+      <point x="181.0000000000001" y="220.0" />
+      <point x="825.342857142857" y="220.0" />
+      <point x="-22.85714285714289" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.AdminUserDTO" target="com.Resume.model.User">
+      <point x="57.60000000000002" y="-15.0" />
+      <point x="321.10000000000014" y="340.0" />
+      <point x="842.6807692307693" y="340.0" />
+      <point x="-30.769230769230717" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.UserRestControllerV1" target="com.Resume.service.UserService">
+      <point x="-26.0" y="-15.0" />
+      <point x="1146.7862890356396" y="630.0" />
+      <point x="1126.9681072174578" y="630.0" />
+      <point x="12.36363636363626" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtTokenFilter" target="com.Resume.security.Jwt.JwtTokenProvider">
+      <point x="40.0" y="-15.0" />
+      <point x="2069.2862890356396" y="390.0" />
+      <point x="1982.3635234894975" y="390.0" />
+      <point x="33.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.repository.RoleRepository" target="com.Resume.model.Role">
+      <point x="0.0" y="-15.0" />
+      <point x="90.50000000000011" y="210.0" />
+      <point x="813.9142857142856" y="210.0" />
+      <point x="-34.285714285714334" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtTokenProvider" target="com.Resume.security.Jwt.JwtAuthenticationException">
+      <point x="44.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.AdminUserDTO" target="com.Resume.model.Status">
+      <point x="-57.60000000000002" y="-15.0" />
+      <point x="205.9000000000001" y="300.0" />
+      <point x="247.14398134333203" y="300.0" />
+      <point x="247.14398134333203" y="60.0" />
+      <point x="454.75" y="60.0" />
+      <point x="-19.200000000000045" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.model.Status">
+      <point x="-74.66666666666674" y="-15.0" />
+      <point x="302.5580376333621" y="630.0" />
+      <point x="0.0" y="630.0" />
+      <point x="0.0" y="50.0" />
+      <point x="435.55000000000007" y="50.0" />
+      <point x="-38.39999999999998" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.UserRestControllerV1" target="com.Resume.dto.UserDto">
+      <point x="26.0" y="-15.0" />
+      <point x="1198.7862890356396" y="630.0" />
+      <point x="1193.1044708538216" y="630.0" />
+      <point x="1193.1044708538216" y="470.0" />
+      <point x="791.3271598531337" y="470.0" />
+      <point x="41.60000000000002" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.JwtUserDetalsService" target="com.Resume.model.User">
+      <point x="0.0" y="-15.0" />
+      <point x="1400.7862890356396" y="600.0" />
+      <point x="1362.3000000000002" y="600.0" />
+      <point x="1362.3000000000002" y="380.0" />
+      <point x="898.0653846153846" y="380.0" />
+      <point x="24.61538461538464" y="15.0" />
+    </edge>
+    <edge source="com.Resume.repository.UserRepository" target="com.Resume.model.User">
+      <point x="0.0" y="-15.0" />
+      <point x="436.5000000000001" y="360.0" />
+      <point x="854.9884615384615" y="360.0" />
+      <point x="-18.461538461538453" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.AdminRestControllerV1" target="com.Resume.service.UserService">
+      <point x="86.39999999999998" y="-15.0" />
+      <point x="735.1862890356397" y="600.0" />
+      <point x="1077.5135617629126" y="600.0" />
+      <point x="-37.09090909090901" y="15.0" />
+    </edge>
+    <edge source="com.Resume.rest.RegistrationRestControllerV1" target="com.Resume.service.UserService">
+      <point x="101.99999999999989" y="-15.0" />
+      <point x="1014.7862890356396" y="620.0" />
+      <point x="1102.2408344901853" y="620.0" />
+      <point x="-12.36363636363626" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.impl.UserServiceImpl" target="com.Resume.repository.UserRepository">
+      <point x="37.333333333333314" y="-15.0" />
+      <point x="414.5580376333621" y="560.0" />
+      <point x="476.5000000000001" y="560.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="com.Resume.dto.RoleDTO" target="com.Resume.model.Role">
+      <point x="26.0" y="-15.0" />
+      <point x="531.3960329713574" y="230.0" />
+      <point x="836.7714285714285" y="230.0" />
+      <point x="-11.428571428571445" y="15.0" />
+    </edge>
+    <edge source="com.Resume.service.UserService" target="com.Resume.model.User">
+      <point x="34.0" y="-15.0" />
+      <point x="1148.6044708538216" y="400.0" />
+      <point x="885.7576923076922" y="400.0" />
+      <point x="12.307692307692264" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtUserFactory" target="com.Resume.model.User">
+      <point x="-64.0" y="-15.0" />
+      <point x="1389.1135234894975" y="480.0" />
+      <point x="1410.5500000000002" y="480.0" />
+      <point x="1410.5500000000002" y="370.0" />
+      <point x="904.2192307692308" y="370.0" />
+      <point x="30.76923076923083" y="15.0" />
+    </edge>
+    <edge source="com.Resume.security.Jwt.JwtUserFactory" target="com.Resume.security.Jwt.JwtUser">
+      <point x="64.0" y="-15.0" />
+      <point x="1517.1135234894975" y="480.0" />
+      <point x="1496.1884152643893" y="480.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="1181.5714285714284" y="290.2380952380953" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

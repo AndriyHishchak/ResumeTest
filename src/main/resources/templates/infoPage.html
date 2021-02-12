@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Get Shit Done Bootstrap Wizard by Creative Tim</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="image-container set-full-height" style="background-image: url('assets/img/wizard.jpg')">
+    <!--   Creative Tim Branding   -->
+    <a href="http://creative-tim.com">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="assets/img/new_logo.png">
+            </div>
+            <div class="brand">
+                Creative Tim
+            </div>
+        </div>
+    </a>
+
+    <!--  Made With Get Shit Done Kit  -->
+    <a href="http://demos.creative-tim.com/get-shit-done/index.html?ref=get-shit-done-bootstrap-wizard" class="made-with-mk">
+        <div class="brand">GK</div>
+        <div class="made-with">Made with <strong>GSDK</strong></div>
+    </a>
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <!--      Wizard container        -->
+                <div class="wizard-container">
+
+                    <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                        <form th:action="@{/infoPage}" method="post">
+                            <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                            <div class="wizard-header">
+                                <h3>
+                                    <b>BUILD</b> YOUR PROFILE <br>
+                                    <small>This information will let us know more about you.</small>
+                                </h3>
+                            </div>
+
+                            <div class="wizard-navigation">
+                                <ul>
+                                    <li><a href="#about" data-toggle="tab">About</a></li>
+                                    <li><a href="#account" data-toggle="tab">Account</a></li>
+                                    <li><a href="#address" data-toggle="tab">Address</a></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane" id="about">
+                                    <div class="row">
+                                        <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
+                                        <div class="col-sm-4 col-sm-offset-1">
+                                            <div class="picture-container">
+                                                <div class="picture">
+                                                    <img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
+                                                    <input type="text" id="large_photo">
+                                                </div>
+                                                <h6>Choose Picture</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Firstname <small>(required)</small></label>
+                                                <input name="first_name" type="text" class="form-control" placeholder="Andriy Hishchak">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Lastname <small>(required)</small></label>
+                                                <input name="last_name" type="text" class="form-control" placeholder="*******">
+                                            </div>
+
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-4">
+                                                            <select name="month"id="month" class="form-control">
+                                                                <option value="January"> January </option>
+                                                                <option value="February"> February </option>
+                                                                <option value="March"> March </option>
+                                                                <option value="April"> April </option>
+                                                                <option value="May"> May </option>
+                                                                <option value="June"> June </option>
+                                                                <option value="July"> July </option>
+                                                                <option value="August"> August </option>
+                                                                <option value="September"> September </option>
+                                                                <option value="October"> October </option>
+                                                                <option value="November"> November </option>
+                                                                <option value="December"> December </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <select name="days" id="days" class="form-control">
+                                                                <option value="1"> 1 </option>
+                                                                <option value="2"> 2 </option>
+                                                                <option value="3"> 3 </option>
+                                                                <option value="4"> 4 </option>
+                                                                <option value="5"> 5 </option>
+                                                                <option value="6"> 6 </option>
+                                                                <option value="7"> 7 </option>
+                                                                <option value="8"> 8 </option>
+                                                                <option value="9"> 9 </option>
+                                                                <option value="10"> 10 </option>
+                                                                <option value="11"> 11 </option>
+                                                                <option value="12"> 12 </option>
+                                                                <option value="13"> 13 </option>
+                                                                <option value="14"> 14 </option>
+                                                                <option value="15"> 15 </option>
+                                                                <option value="16"> 16 </option>
+                                                                <option value="17"> 17 </option>
+                                                                <option value="18"> 18 </option>
+                                                                <option value="19"> 19 </option>
+                                                                <option value="20"> 20 </option>
+                                                                <option value="21"> 21 </option>
+                                                                <option value="22"> 22 </option>
+                                                                <option value="23"> 23 </option>
+                                                                <option value="24"> 24 </option>
+                                                                <option value="25"> 25 </option>
+                                                                <option value="26"> 26 </option>
+                                                                <option value="27"> 27 </option>
+                                                                <option value="28"> 28 </option>
+                                                                <option value="29"> 29 </option>
+                                                                <option value="30"> 30 </option>
+                                                                <option value="31"> 31 </option>
+
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <select name="year" id="year" class="form-control">
+                                                                <option value="1980">1980</option>
+                                                                <option value="1981">1981</option>
+                                                                <option value="1982">1982</option>
+                                                                <option value="1983">1983</option>
+                                                                <option value="1984">1984</option>
+                                                                <option value="1985">1985</option>
+                                                                <option value="1986">1986</option>
+                                                                <option value="1987">1987</option>
+                                                                <option value="1988">1988</option>
+                                                                <option value="1989">1989</option>
+                                                                <option value="1990">1990</option>
+                                                                <option value="1991">1991</option>
+                                                                <option value="1992">1992</option>
+                                                                <option value="1993">1993</option>
+                                                                <option value="1994">1994</option>
+                                                                <option value="1995">1995</option>
+                                                                <option value="1996">1996</option>
+                                                                <option value="1997">1997</option>
+                                                                <option value="1998">1998</option>
+                                                                <option value="1999">1999</option>
+                                                                <option value="2000">2000</option>
+                                                                <option value="2001">2001</option>
+                                                                <option value="2002">2002</option>
+                                                                <option value="2003">2003</option>
+                                                                <option value="2004">2004</option>
+                                                                <option value="2005">2005</option>
+                                                                <option value="2006">2006</option>
+                                                                <option value="2007">2007</option>
+                                                                <option value="2008">2008</option>
+                                                                <option value="2009">2009</option>
+                                                                <option value="2010">2010</option>
+                                                                <option value="2011">2011</option>
+                                                                <option value="2012">2012</option>
+                                                                <option value="2013">2013</option>
+                                                                <option value="2014">2014</option>
+                                                                <option value="2015">2015</option>
+                                                                <option value="2016">2016</option>
+                                                                <option value="2017">2017</option>
+                                                                <option value="2018">2018</option>
+                                                                <option value="2019">2019</option>
+                                                                <option value="2020">2020</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label>Country</label><br>
+                                                    <select name="country" class="form-control">
+                                                        <option value="Afghanistan"> Afghanistan </option>
+                                                        <option value="Albania"> Albania </option>
+                                                        <option value="Algeria"> Algeria </option>
+                                                        <option value="American Samoa"> American Samoa </option>
+                                                        <option value="Andorra"> Andorra </option>
+                                                        <option value="Angola"> Angola </option>
+                                                        <option value="Anguilla"> Anguilla </option>
+                                                        <option value="Antarctica"> Antarctica </option>
+                                                        <option value="...">...</option>
+                                                    </select>
+                                                </div></div>
+                                            <div class="form-group">
+                                                <label>city <small>(required)</small></label>
+                                                <input name="city" type="text" class="form-control" placeholder="Lviv">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>marital status <small>(required)</small></label>
+                                                <input name="marital_status" type="text" class="form-control" placeholder="Married, Two children">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>phone <small>(required)</small></label>
+                                                <input name="phone" type="phone" class="form-control" placeholder="+380">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="account">
+                                    <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                                    <div class="row">
+
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-skype"></i> Skype</label>
+                                                    <input type="text" name="skype" class="form-control" id="skype" placeholder="richard-hendricks">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-vk"></i> Vkontakte</label>
+                                                    <input type="text" name="vkontakte" class="form-control" id="vkontakte" placeholder="https://vk.com/richard-hendricks">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-facebook"></i> Facebook</label>
+                                                    <input type="text" name="facebook" class="form-control" id="facebook" placeholder="https://facebook.com/richard-hendricks">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-linkedin"></i> Linkedin</label>
+                                                    <input type="text" name="linkedin" class="form-control" id="linkedin" placeholder="https://linkedin.com/richard-hendricks">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-github"></i> Github</label>
+                                                    <input type="text" name="github" class="form-control" id="github" placeholder="https://github.com/richard-hendricks">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><i class="fa fa-stack-overflow"> Stackoverflow</i></label>
+                                                    <input type="text" name="stackoverflow" class="form-control" id="stackoverflow" placeholder="https://stackoverflow.com/richard-hendricks">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="address">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> Are you living in a nice area? </h4>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="Step up">
+                                                <label>Course</label>
+                                                <select name="step_up" id="step_up" class="form-control" >
+                                                <option value="Junior Specialist">Junior Specialist</option>
+                                                <option value="Bachelor of Science">Bachelor of Science</option>
+                                                <option value="Master's degree">Master's degree</option>
+                                                </select>
+                                        </div>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label>City</label>
+                                                <input type="text" name="university_city" class="form-control" id="university_city" placeholder="Lviv">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <div class="form-group">
+                                                <label>Faculty</label>
+                                                <input type="text" name="faculty" class="form-control" id="faculty" placeholder="IT">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Specialty</label>
+                                                <input type="text" name="specialty" class="form-control" id="specialty" placeholder="Software">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Course</label>
+                                                <select name="course" id="course" class="form-control">
+                                                <option value="I">I</option>
+                                                <option value="II">II</option>
+                                                <option value="III">III</option>
+                                                <option value="IV">IV</option>
+                                                </select>
+                                        </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label>University</label>
+                                                <input type="text" name="university" class="form-control" id="university" placeholder="NULP">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <label>Start date</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label>Finished data</label>
+                                        </div>
+                                            <div class="col-sm-3">
+                                                <select name="begin_month"id="begin_month" class="form-control">
+                                                    <option value="January"> January </option>
+                                                    <option value="February"> February </option>
+                                                    <option value="March"> March </option>
+                                                    <option value="April"> April </option>
+                                                    <option value="May"> May </option>
+                                                    <option value="June"> June </option>
+                                                    <option value="July"> July </option>
+                                                    <option value="August"> August </option>
+                                                    <option value="September"> September </option>
+                                                    <option value="October"> October </option>
+                                                    <option value="November"> November </option>
+                                                    <option value="December"> December </option>
+                                                </select>
+                                            </div>
+                                                    <div class="col-sm-3">
+                                                        <select name="begin_year" id="begin_year" class="form-control">
+                                                            <option value="1980">1980</option>
+                                                            <option value="1981">1981</option>
+                                                            <option value="1982">1982</option>
+                                                            <option value="1983">1983</option>
+                                                            <option value="1984">1984</option>
+                                                            <option value="1985">1985</option>
+                                                            <option value="1986">1986</option>
+                                                            <option value="1987">1987</option>
+                                                            <option value="1988">1988</option>
+                                                            <option value="1989">1989</option>
+                                                            <option value="1990">1990</option>
+                                                            <option value="1991">1991</option>
+                                                            <option value="1992">1992</option>
+                                                            <option value="1993">1993</option>
+                                                            <option value="1994">1994</option>
+                                                            <option value="1995">1995</option>
+                                                            <option value="1996">1996</option>
+                                                            <option value="1997">1997</option>
+                                                            <option value="1998">1998</option>
+                                                            <option value="1999">1999</option>
+                                                            <option value="2000">2000</option>
+                                                            <option value="2001">2001</option>
+                                                            <option value="2002">2002</option>
+                                                            <option value="2003">2003</option>
+                                                            <option value="2004">2004</option>
+                                                            <option value="2005">2005</option>
+                                                            <option value="2006">2006</option>
+                                                            <option value="2007">2007</option>
+                                                            <option value="2008">2008</option>
+                                                            <option value="2009">2009</option>
+                                                            <option value="2010">2010</option>
+                                                            <option value="2011">2011</option>
+                                                            <option value="2012">2012</option>
+                                                            <option value="2013">2013</option>
+                                                            <option value="2014">2014</option>
+                                                            <option value="2015">2015</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2020">2020</option>
+                                                        </select>
+                                            </div>
+                                            <div class="col-sm-3">
+
+                                                        <select name="finish_month"id="finish_month" class="form-control">
+                                                            <option value="January"> January </option>
+                                                            <option value="February"> February </option>
+                                                            <option value="March"> March </option>
+                                                            <option value="April"> April </option>
+                                                            <option value="May"> May </option>
+                                                            <option value="June"> June </option>
+                                                            <option value="July"> July </option>
+                                                            <option value="August"> August </option>
+                                                            <option value="September"> September </option>
+                                                            <option value="October"> October </option>
+                                                            <option value="November"> November </option>
+                                                            <option value="December"> December </option>
+                                                        </select>
+                                            </div>
+                                                    <div class="col-sm-3">
+                                                        <select name="finish_year" id="finish_year" class="form-control">
+                                                            <option value="1980">1980</option>
+                                                            <option value="1981">1981</option>
+                                                            <option value="1982">1982</option>
+                                                            <option value="1983">1983</option>
+                                                            <option value="1984">1984</option>
+                                                            <option value="1985">1985</option>
+                                                            <option value="1986">1986</option>
+                                                            <option value="1987">1987</option>
+                                                            <option value="1988">1988</option>
+                                                            <option value="1989">1989</option>
+                                                            <option value="1990">1990</option>
+                                                            <option value="1991">1991</option>
+                                                            <option value="1992">1992</option>
+                                                            <option value="1993">1993</option>
+                                                            <option value="1994">1994</option>
+                                                            <option value="1995">1995</option>
+                                                            <option value="1996">1996</option>
+                                                            <option value="1997">1997</option>
+                                                            <option value="1998">1998</option>
+                                                            <option value="1999">1999</option>
+                                                            <option value="2000">2000</option>
+                                                            <option value="2001">2001</option>
+                                                            <option value="2002">2002</option>
+                                                            <option value="2003">2003</option>
+                                                            <option value="2004">2004</option>
+                                                            <option value="2005">2005</option>
+                                                            <option value="2006">2006</option>
+                                                            <option value="2007">2007</option>
+                                                            <option value="2008">2008</option>
+                                                            <option value="2009">2009</option>
+                                                            <option value="2010">2010</option>
+                                                            <option value="2011">2011</option>
+                                                            <option value="2012">2012</option>
+                                                            <option value="2013">2013</option>
+                                                            <option value="2014">2014</option>
+                                                            <option value="2015">2015</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="2017">2017</option>
+                                                            <option value="2018">2018</option>
+                                                            <option value="2019">2019</option>
+                                                            <option value="2020">2020</option>
+                                                        </select>
+                                            </div>
+
+
+
+                                      </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="wizard-footer height-wizard">
+                                <div class="pull-right">
+                                    <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+                                    <button  id="submit"  class="btn btn-finish btn-fill btn-warning btn-wd btn-sm button" name="finish" value="Finish">Finish</button>
+                                </div>
+
+                                <div class="pull-left">
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div> <!-- wizard container -->
+            </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+
+    <div class="footer">
+        <div class="container">
+            Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/bootstrap-wizard">here.</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>

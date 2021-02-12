@@ -95,6 +95,7 @@ public class UserServiceImpl implements UserService {
         List<Role> userRoles = new ArrayList<>(user.getRoles());
         userRoles.add(roleUser);
         user.setRoles(userRoles);
+        userRepository.save(user);
         return user;
     }
 

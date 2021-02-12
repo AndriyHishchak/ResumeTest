@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>3D login form concept</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" type="text/css" href="/css/styleLogin.css">
+
+  
+</head>
+
+<body>
+
+
+<form th:action="@{/sign-in}" method="post"class="form" id="form">
+  <div class="field email">
+    <div class="icon"></div>
+    <input class="input" name="username" id="username" type="text" placeholder="Username" autocomplete="off"/>
+  </div>
+  <div class="field password">
+    <div class="icon"></div>
+    <input class="input" name="password" id="password" type="password" placeholder="Password"/>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="checkRememberMe" name="checkRememberMe">
+    <label class="form-check-input" for="checkRememberMe">Remember me?</label>
+  </div>
+  <button class="button" id="submit">LOGIN
+    <div class="side-top-bottom"></div>
+    <div class="side-left-right"></div>
+  </button>
+ <small><div class="text-center p-t-136">
+   <a class="txt2" href="/sign-up">
+     Create your Account
+     <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i></a></div></small>
+</form>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+
+    <script  src="/js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

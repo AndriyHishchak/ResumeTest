@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form class="form-inline my-2 my-lg-0" method="post" th:action="@{/logout}">
+    <button sec:authorize="isAuthenticated()" class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
+    <button sec:authorize="isAnonymous()" th:href="@{/login}" class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Login</button>
+</form>
+<h1>Index page</h1>
+
+
+<tr th:each="curentUser : ${users}">
+    <div th:if="${#authentication.name == curentUser.getUsername()}">
+    <td th:text="${curentUser.id}">User ID</td>
+    <td th:text="${curentUser.getUsername()}">Username</td>
+    <td th:text="${curentUser.getRoleList()}">Roles </td>
+    <td th:text="${curentUser.getActive()}">Active </td>
+    <td th:text="${curentUser.getPermissionList()}">Permission </td>
+    <td th:text="${curentUser.getProfile().getFirst_name()}">Password </td>
+<!--    <td th:text="${curentUser.getProfile().getCity()}">City</td>-->
+    <br>
+    </div>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<table>-->
+<!--    -->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Username:</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span sec:authentication="name"></span></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Authorities:</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span sec:authentication="principal.username"></span></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Authorities:</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><span sec:authentication="principal."></span></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+
+<!--</table>-->
+
+</body>
+</html>
